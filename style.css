@@ -1,0 +1,99 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Oswald', sans-serif;
+  background-color: #0a0a0a;
+  color: #ffffff;
+}
+
+header {
+  text-align: center;
+  padding: 1rem;
+  background: #0a0a0a;
+}
+
+.logo {
+  height: 60px;
+}
+
+.logo.large {
+  height: 90px;
+}
+
+.hero {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  padding: 2rem;
+  transition: background-image 1s ease-in-out;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.hero-text {
+  z-index: 2;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #ccc;
+}
+
+.buttons {
+  margin-top: 1.5rem;
+}
+
+.btn, .btn-alt {
+  background: #333;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  margin: 0 0.5rem;
+  transition: background 0.3s ease;
+}
+
+.btn:hover, .btn-alt:hover {
+  background: #000;
+}
+
+footer {
+  background: #111;
+  padding: 2rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+.isologo {
+  margin-top: 1.5rem;
+  height: 40px;
+  opacity: 0.6;
+}
+
+.isologo.large {
+  height: 60px;
+}
