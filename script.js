@@ -21,6 +21,5 @@ function rotateBackground() {
   heroSection.style.backgroundImage = 'url(' + nextImage + ')';
 }
 
-// Inicial
 heroSection.style.backgroundImage = 'url(' + images[0] + ')';
 setInterval(rotateBackground, 6000);

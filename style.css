@@ -9,6 +9,12 @@ body {
   font-family: 'Oswald', sans-serif;
   background-color: #0a0a0a;
   color: #ffffff;
+  animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
 header {
@@ -72,7 +78,7 @@ header {
   padding: 0.75rem 1.5rem;
   border-radius: 8px;
   text-decoration: none;
-  margin: 0 0.5rem;
+  margin: 0.5rem;
   transition: background 0.3s ease;
 }
 
@@ -96,4 +102,34 @@ footer {
 
 .isologo.large {
   height: 60px;
+}
+
+@media (max-width: 768px) {
+  .logo.large {
+    height: 60px;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .btn, .btn-alt {
+    width: 90%;
+    text-align: center;
+  }
+
+  .isologo.large {
+    height: 50px;
+  }
 }
